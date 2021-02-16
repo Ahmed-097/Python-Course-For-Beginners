@@ -70,9 +70,11 @@ Expected output: ['h', 'i', 'j']
 Complete the script so that it prints out a list slice containing letters a, c, e, g, and i. 
 letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
 
+x=[]
 for index ,i in enumerate (letters):
     if index%2==0:
-        print([i],end="")
+        x.append(i)
+print(x)
         
 Expected output: ['a', 'c', 'e', 'g', 'i'] 
 
